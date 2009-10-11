@@ -4,6 +4,20 @@
 #include <stdio.h>
 #define maxArg 6
 
+char* chequearPuerto(int numArgumentos, char** argv)
+{
+	int cont = 1;
+
+  while (cont < numArgumentos){
+    if  (strcmp(argv[cont],"-p") == 0){
+      return argv[cont + 1];
+    }
+    cont +=2;
+  }
+    
+  return "16000";
+}
+
 void chequearMaxArgumentos(int numArgumentos)
 {
 	if  (numArgumentos > maxArg) {

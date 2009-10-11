@@ -10,6 +10,7 @@ FILE* fd;
 
 void chequearMaxArgumentos(int);
 char* concatenarPath(char*, char*);
+char* chequearPuerto(int, char**);
 
 /** Formats time data from stat
  *  and returns a string with the
